@@ -50,7 +50,7 @@ const PlagiarismChecker: React.FC = () => {
   const [textB, setTextB] = useState('');
   const [scrolled, setScrolled] = useState(false);
 
-  const words = useMemo(() => ['Tercepat', 'Terakurat', 'Terpercaya'], []);
+  const words = useMemo(() => ['Tercepat', 'Termudah', 'Teraman'], []);
   const [wordIndex, setWordIndex] = useState(0);
   useEffect(() => { const id = setInterval(()=>setWordIndex(i=>(i+1)%words.length), 2200); return ()=>clearInterval(id); }, [words.length]);
 
@@ -128,8 +128,8 @@ const PlagiarismChecker: React.FC = () => {
             </h1>
 
             <p className="mt-5 text-gray-600 max-w-2xl lg:mx-0 mx-auto text-lg">
-              Analisis kemiripan teks secara cepat dan andal. Sistem menandai kalimat identik, mirip, serta unik untuk
-              mendukung standar integritas di lingkungan akademik maupun profesional.
+              Periksa keaslian teks Anda dalam hitungan detik tanpa ribet. 
+              Sistem kami secara otomatis akan menyoroti kalimat yang sama, mirip, atau berbeda secara jelas. 
             </p>
 
             <div className="mt-7 flex flex-col sm:flex-row lg:justify-start justify-center gap-4">
